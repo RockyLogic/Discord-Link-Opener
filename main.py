@@ -6,7 +6,7 @@ import webbrowser
 import asyncio
 
 
-token = ""
+token = "Token" #Replace Token Here
 client = discord.Client()
 
 def getChannelIDs():
@@ -38,10 +38,8 @@ async def on_message(message):
                 
                 
 async def open_url(url):
-    webbrowser.get("C:\Program Files (x86)\Google\Chrome\Application\chrome.exe %s").open(url)
-    print ("test")  
-                
-
+    webbrowser.open_new(url)
+            
 client.run(token, bot=False)
             
         
